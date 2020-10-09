@@ -41,6 +41,12 @@ def tap():
     row = input("Choose a row number (0-4): ")
     col = input("Choose a column number (0-4): ")
     choice = (row, col)
+    
+
+def find_index(row, col):
+    x = board[row]
+    index = x[col]
+    
 
 
 main()
