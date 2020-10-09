@@ -38,17 +38,35 @@ def is_solved():
 
 
 def tap():
-    row = input("Choose a row number (0-4): ")
-    col = input("Choose a column number (0-4): ")
+    row = int(input("Choose a row number (0-4): "))
+    col = int(input("Choose a column number (0-4): "))
     choice = find_index(row, col)
-    if choice = "\N{BLACK SQUARE}":
+    if choice == "\N{BLACK SQUARE}":
         choice = "\N{WHITE SQUARE}"
-        if find_index(row + 1, col) = "\N{BLACK SQUARE}":
-            find_index(row + 1, col) = "\N{WHITE SQUARE}"
-        else:
-            find_index(row + 1, col) = "\N{BLACK SQUARE}"
-        if find_index(row - 1, col) = "\N{BLACK SQUARE}":
-            find_index(row - 1, col) = "\N{WHITE SQUARE}"
+        
+
+def change_surrounding(row, col):
+    up = find_index(row + 1, col)
+    down = find_index(row - 1, col)
+    right = find_index(row, col + 1)
+    left = find_index(row, col - 1)
+    if up == "\N{BLACK SQUARE}":
+        up = "\N{WHITE SQUARE}"
+    else:
+        up = "\N{BLACK SQUARE}"
+    if down == "\N{BLACK SQUARE}":
+        down = "\N{WHITE SQUARE}"
+    else:
+        down = "\N{BLACK SQUARE}"
+    if right = "\N{BLACK SQAURE}":
+        right = "\N{WHITE SQUARE}"
+    else:
+        right = "\N{BLACK SQUARE}"
+    if left = "\N{BLACK SQUARE}":
+        left = "\N{WHITE SQUARE}"
+    else:
+        left = "\N{BLACK SQUARE}"
+    
     
     
 
