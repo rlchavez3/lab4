@@ -61,11 +61,11 @@ def change_surrounding(row, col):
         down = "\N{WHITE SQUARE}"
     else:
         down = "\N{BLACK SQUARE}"
-    if right = "\N{BLACK SQAURE}":
+    if right == "\N{BLACK SQAURE}":
         right = "\N{WHITE SQUARE}"
     else:
         right = "\N{BLACK SQUARE}"
-    if left = "\N{BLACK SQUARE}":
+    if left == "\N{BLACK SQUARE}":
         left = "\N{WHITE SQUARE}"
     else:
         left = "\N{BLACK SQUARE}"
