@@ -1,0 +1,11 @@
+def is_solved(board):
+    check = 0
+    for row in board:
+        for i in range(len(row)):
+            box = random.randrange(0, 2, 1)
+            if box == "\N{BLACK SQUARE}":
+                check += 1
+    if check == 25:
+        return True
+    if check != 25:
+       return False
