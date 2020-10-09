@@ -43,6 +43,9 @@ def tap():
     choice = find_index(row, col)
     if choice == "\N{BLACK SQUARE}":
         choice = "\N{WHITE SQUARE}"
+    else:
+        choice = "\N{BLACK SQUARE}"
+    chance_surrounding(row, col)
         
 
 def change_surrounding(row, col):
