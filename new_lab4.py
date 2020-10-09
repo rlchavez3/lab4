@@ -40,12 +40,22 @@ def is_solved():
 def tap():
     row = input("Choose a row number (0-4): ")
     col = input("Choose a column number (0-4): ")
-    choice = (row, col)
+    choice = find_index(row, col)
+    if choice = "\N{BLACK SQUARE}":
+        choice = "\N{WHITE SQUARE}"
+        if find_index(row + 1, col) = "\N{BLACK SQUARE}":
+            find_index(row + 1, col) = "\N{WHITE SQUARE}"
+        else:
+            find_index(row + 1, col) = "\N{BLACK SQUARE}"
+        if find_index(row - 1, col) = "\N{BLACK SQUARE}":
+            find_index(row - 1, col) = "\N{WHITE SQUARE}"
+    
     
 
 def find_index(row, col):
     x = board[row]
     index = x[col]
+    return index
     
 
 
